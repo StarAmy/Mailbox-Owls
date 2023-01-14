@@ -1,0 +1,10 @@
+{
+    "Name": "[CP] Mailbox Owl Replacement",
+    "Author": "StarAmy",
+    "Version": "1.0.0",
+    "Description": "Includes animated owl mailbox replacements in several varieties.",
+    "UniqueID": "StarAmy.MailboxOwls",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "Format": "1.27.0",
+    "ConfigSchema": {
+         "Owl": {
+            "AllowValues": "Horned, Barn",
+            "Default": "Horned"
+        },
+     },
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "assets/horned.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+            "When":{ 
+            "Owl": "Horned",
+            "Time": "{{Range: 1800, 2600}}"
+            },
+            "Update": "OnTimeChange"
+		},
+        {
+            "LogName": "Horned Owl Mailbox",  
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "assets/horned.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+            "AnimationFrameTime": 40,
+            "AnimationFrameCount": 30,
+            "When":
+            {
+                "Owl": "Horned",
+                "Time": "{{Range: 1800, 2600}}",
+                "HasMod": "spacechase0.ContentPatcherAnimations",
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "assets/horned_day.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+            "When":{ 
+            "Owl": "Horned",
+            "Time": "{{Range: 0600, 1800}}"
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "assets/barn.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+            "When":{ 
+            "Owl": "Barn",
+            "Time": "{{Range: 1800, 2600}}"
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "assets/barn_day.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+            "When":{ 
+            "Owl": "Barn",
+            "Time": "{{Range: 0600, 1800}}"
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Barn Owl Mailbox",  
+            "Action": "EditImage",
+            "Target": "Maps/{{season}}_outdoorsTileSheet",
+            "FromFile": "assets/barn.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+            "AnimationFrameTime": 40,
+            "AnimationFrameCount": 27,
+            "When":
+            {
+                "Owl": "Barn",
+                "Time": "{{Range: 1800, 2600}}",
+                "HasMod": "spacechase0.ContentPatcherAnimations",
+            },
+            "Update": "OnTimeChange"
+        },
+    ]
+}
